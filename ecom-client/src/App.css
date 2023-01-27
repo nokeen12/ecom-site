@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+.signuppage{
+  display: flex;
+  justify-content: center;
+}
+.signuppage form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.centering{
+  border: 1px solid black;
+  background-color: rgba(50, 50, 50, 0.3);
+  width: 70%;
+}
+.homeproducts{
+  display:flex;
+  flex-wrap:wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.homeproducts > *{
+
+}
+.ProductCard.card{
+  background: white;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 0;
+  padding: 0;
+}
+.ProductCard.card h3{
+  width: 50%;
+  margin-left: 25%;
+}
+.cartPic{
+  width: 150px;
+  height: 150px;
+}
+.Homepage{
+  margin-left: 1%;
+  margin-right: 1%;
+}
+p, h1, h2, h3, h4, a{
+  color: black;
+}
+.mainPic{
+  width: 100%;
+  /* max-width: 300px; */
+  height: auto;
+  transition: 0.4s all ease-in-out;
+}
+.mainPic:hover{
+  scale: 1.5;
+}
+.imgContainer{
+  display: flex;
+  overflow:hidden;
+}
+.pictures{
+  display:flex;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+.link-card{
+  /* aspect-ratio: 1/1; */
+  max-width: 400px;
+  /* max-height: 400px; */
+}
+@media (max-width: 600px){
+  .ProductCard.card{
+    width: 100%;
+  }
+}

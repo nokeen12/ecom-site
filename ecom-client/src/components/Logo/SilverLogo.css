@@ -1,0 +1,14 @@
+.toplogo{
+    color: black;
+}
+.botlogo{
+    color: #848B98;
+}
+.group{
+    line-height: 8px;
+    text-align: right;
+    text-decoration: none;
+}
+.group:hover{
+    transform:translate(0, -2px)
+}
