@@ -1,8 +1,8 @@
-.navbar{
+#navbar{
     display:flex;
     max-width:100%;
     background-color: white;
-    height: 100px;
+    height: 75px;
     align-items: center;
     position: sticky;
     top: 0;
@@ -10,6 +10,8 @@
     padding-left: 20px;
     padding-right: 20px;
     z-index: 1;
+    box-shadow: 0px 0px 5px black;
+    transition: top 0.3s;
 }
 .icon-button svg{
   width: 50px;
@@ -21,14 +23,13 @@
 
 .dropdown{
   position: absolute;
-  top: 70px;
+  top: 60px;
   width: 120px;
   transform: translateX(-60%);
   background-color: white;
-  border: 1px solid black;
-  border-top: none;
-  /* border-radius: 10px; */
-  /* padding: 5px; */
+  box-shadow: 0px 0px 3px black;
+  border-radius: 10px;
+  padding: 5px;
   overflow: hidden;
 }
 .menu-item{
@@ -42,7 +43,7 @@
   background-color: rgba(0,0,0, 0.1);
 }
 @media (max-width: 175px){
-  .navbar{
+  #navbar{
     flex-direction: column;
   }
   .dropdown{

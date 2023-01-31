@@ -6,8 +6,18 @@ import { ReactComponent as BurgerIcon } from '../../icons/hamburgermenu.svg'
 import { AuthContext } from "../../context/auth.context";
 
 function Navbar(){
+    var prevScrollPos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollPos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-75px";
+        }
+        prevScrollPos = currentScrollPos;
+    }
     return(
-        <nav className='navbar'>
+        <nav id='navbar'>
             <div id="logo">
                 <NavItem icon={<SilverLogo />} />
             </div>

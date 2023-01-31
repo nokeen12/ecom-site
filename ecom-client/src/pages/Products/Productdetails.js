@@ -2,7 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../context/auth.context";
 import axios from "axios";
-
+import "../../css/Productdetails.css"
 const API_URL = process.env.REACT_APP_API_URL;
 
 function ProductDetails(){
