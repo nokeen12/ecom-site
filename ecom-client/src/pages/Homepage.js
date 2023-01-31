@@ -9,9 +9,10 @@ function HomePage(){
     const [products, setProducts] = useState([]);
 
     const getAllProducts = () => {
+        setTimeout(()=>{
         axios.get(`${API_URL}/api/products`)
         .then(response=> setProducts(response.data))
-        .catch(err=>console.log(err));
+        .catch(err=>console.log(err))}, 300)
     }
 
     //only grabs all products once
@@ -19,13 +20,12 @@ function HomePage(){
         getAllProducts();
     }, []);
 
-
     return(
         <div className="Homepage">
             {/* <h1 id="title">Home</h1> */}
             <Link to="/products" style={{"textDecoration": "underline"}}>All Products</Link>
             <div className="homeproducts">
-                {products.filter((item, index) => index < 4).map(product=>{
+                {products && products.filter((item, index) => index < 4).map(product=>{
                     return(
                         <div className="ProductCard card" key={product._id}>
                             <Link to={`/products/${product._id}`} className="link-card">
