@@ -14,6 +14,10 @@ code {
     monospace;
 }
 
+.App {
+  text-align: center;
+}
+
 ul{
   list-style: none;
   margin: 0;
@@ -25,4 +29,7 @@ a{
 li{
   text-decoration: none;
   list-style-type: none;
+}
+p, h1, h2, h3, h4, a{
+  color: black;
 }

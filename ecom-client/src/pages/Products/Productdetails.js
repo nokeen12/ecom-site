@@ -2,7 +2,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../context/auth.context";
 import axios from "axios";
-import "../../css/Productdetails.css"
+import "../../css/Productdetails.css";
+
 const API_URL = process.env.REACT_APP_API_URL;
 
 function ProductDetails(){
@@ -40,7 +41,7 @@ function ProductDetails(){
     
     return(
         <div className="ProductPage">
-        <br/>
+            <br/>
             <div className="pictures">
                 <div className="imgContainer"
                     style={{"width": "80%"}}
@@ -53,11 +54,11 @@ function ProductDetails(){
             <div className="description">
                 <p>{product.title}</p>
                 <p style={{"fontWeight": "300"}}>${product.price}</p>
-            </div>
+        </div>
 
-            {isLoggedIn && <form onSubmit={handleAddCartSubmit}><button type='submit'>Add to Cart</button></form>}
-            
-            { errorMessage && <p className="error-message">{errorMessage}</p> }
+        {isLoggedIn && <form onSubmit={handleAddCartSubmit}><button type='submit'>Add to Cart</button></form>}
+        
+        { errorMessage && <p className="error-message">{errorMessage}</p> }
         </div>
     )
 }
