@@ -1,4 +1,22 @@
+#ProductPage{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-evenly;
+}
 .ProductCard.card h3{
     width: 50%;
     margin-left: 25%;
+}
+.pictures{
+    display:flex;
+    justify-content: center;
+    width: 50%;
+}
+.description{
+}
+.details{
+    margin-top: 100px;
+    text-align: left;
+    line-height: 2rem;
+    text-indent: 2rem;
 }
