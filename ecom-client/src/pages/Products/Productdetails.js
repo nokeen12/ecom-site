@@ -55,10 +55,11 @@ function ProductDetails(){
             <div className="description">
                 <p>{product.title}</p>
                 <p style={{"fontWeight": "300"}}>${product.price}</p>
+                {isLoggedIn && <form onSubmit={handleAddCartSubmit}><button type='submit'>Add to Cart</button></form>}
                 <div className="details" dangerouslySetInnerHTML={{__html: htmlText}}></div>
         </div>
 
-        {isLoggedIn && <form onSubmit={handleAddCartSubmit}><button type='submit'>Add to Cart</button></form>}
+        
         
         { errorMessage && <p className="error-message">{errorMessage}</p> }
         </div>
