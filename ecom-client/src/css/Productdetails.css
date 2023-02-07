@@ -20,7 +20,7 @@
     line-height: 2rem;
     text-indent: 2rem;
 }
-button{
+#ProductPage button{
     margin-top: 10px;
     background-color: gray;
     font-weight: 700;
@@ -30,12 +30,12 @@ button{
     padding: 10px 50px 10px 50px;
     color: white;
 }
-button:hover,:focus{
+#ProductPage button:hover,#ProductPage button:focus{
     background-color:lightgray;
     border:1px solid black;
     padding: 9px 50px 9px 50px;
 }
-button:active{
+#ProductPage button:active{
     background-color: white;
     color: black;
 }
