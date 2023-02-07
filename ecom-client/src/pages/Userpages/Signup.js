@@ -38,43 +38,46 @@ function Signup(){
 
     return(
         <div className="signuppage">
-        <div className="centering">
-            <h1>Sign Up</h1>
- 
-            <form onSubmit={handleSignupSubmit}>
-            
-                <label>*Username:</label>
-                <input 
-                    type="text"
-                    name="username"
-                    value={username}
-                    onChange={handleUsername}
-                />
+            <div className="centering">
+                <h1>Create an Account</h1>
+    
+                <form onSubmit={handleSignupSubmit}>
+                
+                    {/* <label>Username:</label> */}
+                    <input 
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        value={username}
+                        onChange={handleUsername}
+                    />
 
-                <label>*Email:</label>
-                <input 
-                    type="email"
-                    name="email"
-                    value={email}
-                    onChange={handleEmail}
-                />
+                    {/* <label>Email:</label> */}
+                    <input 
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        value={email}
+                        onChange={handleEmail}
+                    />
 
-                <label>*Password:</label>
-                <input 
-                    type="password"
-                    name="password"
-                    value={password}
-                    onChange={handlePassword}
-                />
+                    {/* <label>Password:</label> */}
+                    <input 
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={handlePassword}
+                    />
 
-                <button type="submit">Sign Up</button>
-            </form>
+                    <button type="submit">Sign Up</button>
+                </form>
 
-            { errorMessage && <p className="error-message">{errorMessage}</p> }
+                { errorMessage && <p className="error-message">{errorMessage}</p> }
 
-            <p>Already have account?</p>
-            <Link to={"/login"}> Login</Link>
-        </div>
+                <p>Already have account?</p>
+                <Link to={"/login"}> Login</Link>
+            </div>
         </div>
     )
 }

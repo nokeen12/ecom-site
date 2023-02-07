@@ -4,11 +4,24 @@
 }
 .signuppage form{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
+    text-align: left;
+    padding: 20px 60px;
+}
+.signuppage form input{
+    margin-bottom: 20px;
+    padding: 5px;
 }
 .centering{
+    margin-top: 20px;
     border: 1px solid black;
-    background-color: rgba(50, 50, 50, 0.3);
+    border-radius: 4px;
+    background-color: rgba(50, 50, 50, 0.1);
     width: 70%;
+    max-width: 500px;
+    padding-bottom: 20px;
+}
+.centering a{
+    text-decoration: underline;
 }
