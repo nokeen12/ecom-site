@@ -6,7 +6,7 @@ This full stack web application was made for the purpose of gaining experience i
 
 ## How to run application
 
-Visit `https://loquacious-cactus-26d2a9.netlify.app/`
+Visit `https://age-of-silver.netlify.app/`
 
 ### Tech
 
