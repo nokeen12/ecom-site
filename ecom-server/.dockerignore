@@ -1,5 +1,10 @@
+# flyctl launch added from .gitignore
+# Dependency directory
+**\node_modules
+
+# Debug log from npm
+**\npm-debug.log
+
+# Environment Variables should NEVER be published
+**\.env
 fly.toml
-Dockerfile
-.dockerignore
-node_modules
-.git

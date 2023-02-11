@@ -1,14 +1,16 @@
-# fly.toml file generated for ecom-server on 2022-12-14T14:51:51-06:00
+# fly.toml file generated for ageofsilver-server on 2023-02-10T18:45:57-06:00
 
-app = "ecom-server"
+app = "ageofsilver-server"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
+[build]
+  image = "flyio/hellofly:latest"
+
 [env]
 
 [experimental]
-  allowed_public_ports = []
   auto_rollback = true
 
 [[services]]
