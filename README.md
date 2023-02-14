@@ -14,12 +14,14 @@ JavaScript, React, Node.js, MongoDB, Express.js, HTML, CSS
 
 ## To-do
 
-1. Fix migrating backend to fly.io
-2. Add item filter/categories
-3. Add item search bar
-4. Add checkout
-5. Add about section to readme.md
+1. Add item filter/categories
+2. Add item search bar
+3. Add checkout
+4. Add about section to readme.md
 
 ## About
 
-...
+Explore a catalog of silver jewelry and add them to your cart after creating an account and logging in.
+
+Client hosted using `Netlify`
+Server hosted using `Render`
